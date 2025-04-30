@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+.roboto-900 {
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  }
+  .roboto-100 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0D0221;
+    font-family: sans-serif;
+}
+.site{
+    background-color: #0D0221;
+}
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3%;
+}
+
+.icone-header {
+    width: 20%;
+    padding-left: 10px;
+}
+
+.h1-header {
+    font-size: 24px;
+    color: white;
+}
+/* ANUNCIO */
+.anuncio{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    gap: 20px;
+    background-color: #9799CA;
+    border-radius: 20px;
+}
+.icone-anuncio{
+    width: 40px;
+    padding-left: 10px;
+}
+.text-anuncio{
+    line-height: 0%
+}
+.h1-anuncio {
+    font-size: 24px;
+    color: crimson;
+}
+.anuncio-texto{
+    line-height: 15px !important;
+    color: white;
+    font-weight: bold;
+}
+/* SESSAO DE BOTOES */
+
+.botoes-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.botoes-image{
+    width: 50px;
+    height: auto;
+}
+.botoes-legenda {
+    display: none;
+}
+.botoes-item{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.p-botoes{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+/* FOOTER */
+.footer{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: -20px;
+}
+/*OPCAO PAGE*/
+#opcao1-page{
+    color: white;
+    padding: 15px;
+    margin-top: -30px;
+}
+.opcao-h2-page {
+    font-weight: bold;
+    color: crimson;
+}
+.opcao-p-page{
+    font-size: 14px;
+}
+/* BOTAO VOLTAR */
+button{
+    width: 100px;
+    height: 40px;                
+    padding: 8px 12px;           
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9799CA;   
+    color: white;                
+    border: none;
+    border-radius: 5px;         
+    cursor: pointer;             
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+.botao-div {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+/* Telas maiores */
+@media (min-width: 480px) {
+    .site {
+        max-width: 400px;
+    }
+    body{
+        background-color: #f5f5f5;
+    }
+}
+
+@media (min-width: 600px) {
+    .site {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 801px) {
+    .site {
+        max-width: 700px;
+    }
+    .botoes-card {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .botoes-item {
+        width: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .botoes-legenda {
+        display: inline-block;
+        color: white;
+    }
+}
+
+@media (min-width: 1025px) {
+    .site {
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .site {
+        max-width: 1100px;
+    }
+
+}
